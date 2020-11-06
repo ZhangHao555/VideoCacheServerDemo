@@ -1,0 +1,3 @@
+include ':VideoCacheServer'
+include ':app'
+rootProject.name = "VideoCacheDemo"
