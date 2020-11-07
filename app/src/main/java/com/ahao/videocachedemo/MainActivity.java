@@ -21,9 +21,7 @@ public class MainActivity extends AppCompatActivity {
         videoView = new VideoView(this);
         container.addView(videoView, ViewGroup.LayoutParams.MATCH_PARENT,ViewGroup.LayoutParams.MATCH_PARENT);
         /*"http://vfx.mtime.cn/Video/2019/03/21/mp4/190321153853126488.mp4"*/
-        /*http://192.168.2.197/m3u8/xiaochou.m3u8*/
-        /*https://sina.com-h-sina.com/20181024/21342_8f737b71/1000k/hls/index.m3u8*/
-        String proxyUrl = APP.getVideoProxyServer().getLocalProxyUrl("https://sina.com-h-sina.com/20181024/21342_8f737b71/1000k/hls/index.m3u8");
+        String proxyUrl = APP.getVideoProxyServer().getLocalProxyUrl("http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_4x3/gear2/prog_index.m3u8");
         videoView.setVideoPath(proxyUrl);
         videoView.setMediaController(new MediaController(this));
         videoView.start();
